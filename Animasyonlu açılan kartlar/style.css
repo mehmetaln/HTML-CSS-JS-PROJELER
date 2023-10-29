@@ -40,6 +40,9 @@ body{
     opacity: 0;
 
 }
+.panel.active{
+    flex: 5;
+}
 .panel.active h3{
     text-decoration: underline;
     opacity: 1;
@@ -49,6 +52,10 @@ body{
 @media (max-width: 600px) {
     .container{
         width: 100vw;
+    }
+
+    .panel:nth-of-type(4),panel:nth-of-type(5){
+        display: none;
     }
     
 }
