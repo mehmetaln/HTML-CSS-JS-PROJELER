@@ -23,6 +23,7 @@
 
 .container .show-nav{
     transform: rotate(-20deg);
+    display: none;
 }
 
 .circle-container{
@@ -98,7 +99,7 @@ nav{
 
 nav ul {
     list-style: none;
-    padding: 30px;
+    padding-left: 30px;
 
 }
 
@@ -110,7 +111,7 @@ nav ul li {
     transition:  transform  0.4s ease-in;
 }
 
-nav ul li +li {
+nav ul li+li {
     margin-left: 15px;
     transform: translateX(-150%);
 }
@@ -120,6 +121,6 @@ nav ul li+li+li{
     transform: translateX(-200%);
 }
 .container.show-nav + nav li {
-    transform: translateX(0);
-    transition: 0.3s;
+    transform:translateX(0);
+    transition-delay: 0.3s;
 }
