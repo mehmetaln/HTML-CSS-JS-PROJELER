@@ -30,3 +30,25 @@ body{
     position: relative;
     transition: flex 0.7s ease-in;
 }
+
+.panel h3{
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin: 0px;
+    opacity: 0;
+
+}
+.panel.active h3{
+    text-decoration: underline;
+    opacity: 1;
+    transition: opacity 0.3s  ease-in 0.4s;
+}
+
+@media (max-width: 600px) {
+    .container{
+        width: 100vw;
+    }
+    
+}
